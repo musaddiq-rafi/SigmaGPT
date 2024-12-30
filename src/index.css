@@ -131,7 +131,7 @@ body {
   transform-origin: bottom right;
   bottom: 110px; /* Adjusted to align with the button */
   right: 35px; /* Adjusted to align with the button */
-  width: 600px; /* Adjusted width */
+  width: 400px; /* Adjusted width */
   background: #ffffff;
   border-radius: 15px;
   overflow: hidden;
@@ -139,7 +139,7 @@ body {
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column; /* Allows the header, body, and footer to stack */
-  height: 800px; /* Adjusted height */
+  height: 600px; /* Adjusted height */
   transition: all 0.1s ease;
 }
 
@@ -207,7 +207,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px; /* Increased gap */
-  height: 600px; /* Adjusted height */
+  height: 450px; /* Adjusted height */
   flex: 1;
   overflow-y: auto;
   padding: 30px 30px; /* Increased padding */
@@ -295,7 +295,7 @@ body {
   font-size: 1.1rem; /* Increased font size */
 }
 .chat-footer .chat-form:focus-within {
-  outline: 2px solid #ffffff;
+  outline: 1px solid #6D4FC2; /* Maintain outline color */
 }
 
 .chat-form button {
@@ -352,21 +352,26 @@ body {
   .about-me-section p {
     font-size: 1.5rem; /* Increased font size */
   }
+
+  .chatbot-popup {
+    width: 400px; /* Adjusted width */
+    height: 600px; /* Adjusted height */
+  }
 }
 
 /* responsive media queries for mobile devices */
 @media screen and (max-width: 600px) {
   .chatbot-popup {
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    border-radius: 0;
-    height: 100%;
+    width: 100%; /* Full width */
+    right: 0; /* Align to right */
+    bottom: 0; /* Align to bottom */
+    height: 100%; /* Full height */
+    border-radius: 0; /* Remove border-radius */
   }
 
   .chat-header {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 0; /* Remove border-radius */
+    border-top-right-radius: 0; /* Remove border-radius */
   }
 
   .chat-body {
@@ -375,7 +380,7 @@ body {
   }
 
   .chat-footer {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; /* Remove border-radius */
+    border-bottom-right-radius: 0; /* Remove border-radius */
   }
 }
